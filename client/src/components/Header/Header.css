@@ -1,0 +1,107 @@
+.header {
+    height: 34vw;
+    margin: 30px auto;
+    background: url('./src/assets/header_img.png') no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+}
+
+.header-contents p {
+    font-size: 1vw;
+    color: white;
+}
+
+.header-contents button {
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+@media (max-width: 1050px) {
+
+    .header-contents {
+        max-width: 45%;
+        /* Allow slightly more width */
+    }
+
+    .header-contents h2 {
+        font-size: max(4vw, 24px);
+    }
+}
+
+@media (max-width: 750px) {
+    .header {
+        min-height: 45vw;
+    }
+
+    .header-contents {
+        max-width: 50%;
+        /* Use more width on mobile */
+        bottom: 8%;
+        left: 5vw;
+        gap: 2vw;
+    }
+
+    .header-contents h2 {
+        font-size: max(5vw, 20px);
+        /* Adjust font size */
+    }
+
+    .header-contents p {
+        font-size: max(1.8vw, 13px);
+        /* Adjust paragraph font size */
+        /* display: none; /* Option: Hide paragraph on very small screens */
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw;
+        font-size: max(2vw, 4px);
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        min-height: 55vw;
+        /* Even taller on very small screens */
+    }
+
+    .header-contents {
+        max-width: 85%;
+        /* Use most of the width */
+        left: 4vw;
+        bottom: 6%;
+        align-items: center;
+        /* Center content on very small screens */
+        text-align: center;
+    }
+
+    .header-contents h2 {
+        font-size: max(6vw, 18px);
+    }
+
+    .header-contents p {
+        font-size: max(2.5vw, 12px);
+    }
+
+    .header-contents button {
+        padding: 2.5vw 5vw;
+        font-size: max(2.8vw, 12px);
+    }
+}

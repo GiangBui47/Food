@@ -15,6 +15,7 @@
     gap: 20px;
     font-size: 18px;
     color: #49557e;
+    margin: 0;
 }
 
 .navbar-right {
@@ -48,4 +49,48 @@
     border-radius: 5px;
     top: -8px;
     right: -8px;
+}
+
+@media (max-width: 1050px) {
+    .navbar {
+        padding: 15px 4vw;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar button {
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar .logo {
+        width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar {
+        padding: 15px 5vw;
+    }
+
+    .navbar .logo {
+        width: 120px;
+    }
+
 }
